@@ -1,0 +1,61 @@
+
+
+
+
+Ticket To Ride Via MiniMax
+
+Team Members
+
+Bobby Ross
+Ranjith Shanbhag
+Michael Sorenson
+
+Project Coordinator
+
+Michael Sorenson
+
+
+
+
+
+
+
+
+
+
+
+
+
+Colorado State University CS 440 Final Project Proposal
+October 11, 2015
+Project Proposal
+	
+	Our proposal is to use modified algorithms from Russel and Norvig's book 'Artificial Intelligence: A Modern approach' to play a 2 player version of the popular board game 'Ticket To Ride'.   The game can be played with five players, but for the scope of this project, we are restricting the game to two players. Our goal is to develop an AI agent that can either play against a human opponent or another AI and play competently. Ticket to Ride was chosen from amongst the European style board games because it is relatively simple to represent the state space and reason about appropriate actions. It is a game that is easy to learn the rules to, but takes considerable time to master.
+	Since the game is zero-sum, we will implement a minimax algorithm as the basis for making decisions. Actions in the game are deterministic, but the agent does not have perfect information – specifically the agent may not know what train cards and route cards the other player(s) are holding. There are also too many possible moves for most states of the game to reach a definite conclusion. Thus the future states of the game is stochastic. This will require us to modify the minimax algorithm to allow for imperfect information and use heuristic functions to evaluate possible moves. There is current research in the area of this style of board game and a lot of it is focused on machine learning. If possible, we will incorporate some simple learning algorithms, but mostly focus on generating good heuristics. One paper we found proposes using Monte Carlo tree search to develop a good strategy based on a large number of random games. We are exploring the possibility of using that because as they state in their paper, many methods of developing an AI opponent that can play reasonably well take a prohibitively long time.
+
+Background
+
+	Ticket To Ride is a European style board game that has been popular for some time now. The game consists of competing players vying for control of rail lines spanning either the United States of America or Germany, depending on which map is chosen. The Cities and routes are fixed parts of the game and to build a railroad players collect the appropriate number of the correctly typed card for a particular route. Rounds of play are turn based with each player going sequentially. Scoring is accomplished by completing goal routes that players draw throughout the game. An example is complete a route from Chicago to San Francisco. The points are scaled on how difficult the route is and the length of track needed to complete it. In addition, points are awarded for each link between cities based on how long it is. The adversarial nature of the game comes into play in that between many cities, there is only one direct link. The first player who claims it can cutoff opponents and deny them routes while boosting his or her own score.
+
+Link: http://www.daysofwonder.com/tickettoride/en/usa/rules/
+
+	
+
+Relevance To AI
+
+	We view this project as relevant to AI because it combines many of the independent fundamentals of AI such as searching, making decisions in uncertain circumstances, and improving over time. 
+Proposed Project Type
+
+The Project type is of 1st type. We use modified search algorithms used in Russel and Norvig. Along w Monte Carlo Tree Search with 
+
+
+References
+
+1.	Guillaume Chaslot, Sander Bakkes, Istvan Szita and Pieter Spronck, “Monte Carlo Tree Search: A New Framework for Game AI”, Artificial Intelligence and Interative Digital Entertainment Conference, 2008.
+
+2.	Takeuchi, S. Kaneko T, Yamaguchi. K, “Evaluation of Monte Carlo tree search and the application to GO”, Computational Intelligence and Games (CIG), 2012.
+
+
+
+
+
